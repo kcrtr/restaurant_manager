@@ -1,0 +1,36 @@
+#orders {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  height: 80vh;
+  gap: 1rem;
+}
+
+.cards {
+  padding: 20px 0 0 20px;
+}
+
+.card {
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 10px;
+  width: 20rem;
+  height: fit-content;
+  margin-bottom: 15px;
+  min-width: 20rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+  .card {
+    width: 325px;
+  }
+}
+
+.list-group-item {
+  padding: 0.75rem 0;
+}

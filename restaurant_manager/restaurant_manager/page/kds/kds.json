@@ -1,0 +1,25 @@
+{
+  "content": null,
+  "creation": "2021-08-30 22:53:36.934594",
+  "docstatus": 0,
+  "doctype": "Page",
+  "idx": 0,
+  "modified": "2021-08-30 22:53:36.934594",
+  "modified_by": "Administrator",
+  "module": "Restaurant Manager",
+  "name": "kds",
+  "owner": "Administrator",
+  "page_name": "KDS",
+  "roles": [
+    {
+      "role": "System Manager"
+    },
+    {
+      "role": "Administrator"
+    }
+  ],
+  "script": null,
+  "standard": "Yes",
+  "style": null,
+  "system_page": 0
+}

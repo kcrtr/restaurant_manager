@@ -1,0 +1,34 @@
+<div class="card grid-item order">
+  <div class="card-body">
+    <h6 class="card-subtitle mb-2 text-muted">{{order.name}}</h6>
+    <h5 class="card-title">{{order.customer_name}}</h5>
+    <p>{{ order.delivery_time }}</p>
+    <ul class="list-group list-group-flush">
+      {% set items = order['items'] %}
+      {%- for item in items -%}
+      <li class="list-group-item align-items-center">
+        <div class="row">
+          <div class="col-xs-9">
+            <div>
+              <p>
+                <span class="badge badge-primary badge-pill">{{ item.qty|int }}</span>
+                <strong>{{item.item_name}}</strong>
+              </p>
+              {% if item.item_customisations%}
+              <p>{{item.item_customisations}}</p>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-xs-3">
+
+          </div>
+        </div>
+      </li>
+
+      {% endfor %}
+
+    </ul>
+    <a href="#" class="btn btn-primary done">Done</a>
+  </div>
+
+</div>

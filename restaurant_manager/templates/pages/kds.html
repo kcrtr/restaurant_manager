@@ -1,0 +1,7 @@
+<div class="cards">
+  <div id='orders'>
+    {% for ordernumber,order in orders.items() %}
+    {% include 'templates/includes/order_single.html' %}
+    {% endfor %}
+  </div>
+</div>
